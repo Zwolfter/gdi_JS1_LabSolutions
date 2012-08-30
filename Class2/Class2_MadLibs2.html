@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+    
+    <h1>Mad Libs!</h1>
+    <form name="input" action="Class2_MadLibs2.html" method="get">
+        Noun (plural) :     <input type="text" name="answer1" />    <br />
+        Place :             <input type="text" name="answer2" />    <br />
+        Noun :              <input type="text" name="answer3" />    <br />
+        Noun (plural) :     <input type="text" name="answer4" />    <br />
+        Noun :              <input type="text" name="answer5" />    <br />
+        Adjective :         <input type="text" name="answer6" />    <br />
+        Verb :              <input type="text" name="answer7" />    <br />
+        Number :            <input type="text" name="answer8" />    <br />
+        Adjective :         <input type="text" name="answer9" />    <br />
+        Body Part :         <input type="text" name="answer10" />    <br />
+        Verb :              <input type="text" name="answer11" />    <br />
+        
+        <input type="hidden" name="submitted" value="1" />
+        <input type="submit" value="Submit" />
+    </form>
+    <script>
+    
+        function getURLParameter(paramName) {
+            var query = window.location.search.substring(1);
+            var vars = query.split('&');
+            var n, valPair;
+            
+            for( n=0; n < vars.length; n++) {
+                valPair = vars[n].split("="); 
+                if (decodeURIComponent( valPair[0] ) == paramName ) {
+                    console.log('The parameter ' + paramName + ' = ' + valPair[1] );
+                    return decodeURIComponent( valPair[1] );
+                }
+            }
+            
+            console.log('DOH! The parameter ' + valPair[0] + ' not found!');
+            return 0;
+        }
+        
+        var submitted = getURLParameter('submitted');
+        
+        if ( submitted != 0 ) {
+            
+            var answer;
+            var retHTML = '';
+            
+            /* Word 1 - Plural Noun */
+            //answer = prompt("Noun (plural)","");
+            answer = getURLParameter("answer1");
+            retHTML = "Two <b>" + answer + "</b> both alike in dignity, <br> In fair ";
+            
+    
+            /* Word 2 - PLACE */
+            //answer = prompt("PLACE","");
+            answer = getURLParameter("answer2");
+            retHTML = retHTML + "<b>" + answer +  "</b> , where we lay our scene,<br />From ancient  ";
+    
+            /* Word 3 - NOUN */
+            //answer = prompt("NOUN"," ");
+            answer = getURLParameter("answer3");
+            retHTML = retHTML + "<b>" + answer +  "</b>  break to new mutiny, <br /> Where civil blood makes civil hands unclean. <br /> From forth the fatal loins of these two foes <br /> A pair of star-cross'd ";
+    
+            /* Word 4 - NOUN (PLURAL)     */
+            //answer = prompt("NOUN (PLURAL)"," ");
+            answer = getURLParameter("answer4");
+            retHTML = retHTML + "<b>" + answer +  "</b>  take their life; <br /> Whole misadventured piteous overthrows <br /> Do with their ";
+    
+            /* Word 5 - NOUN   */
+            //answer = prompt("NOUN ","");
+            answer = getURLParameter("answer5");
+            retHTML = retHTML + "<b>" + answer +  "</b>  bury their parents` strife. <br /> The fearful passage of their ";
+    
+            /* Word 6 -  ADJECTIVE  */
+            //answer = prompt("ADJECTIVE "," ");
+            answer = getURLParameter("answer6");
+            retHTML = retHTML + "<b>" + answer +  "</b>  love, <br /> And the continuance of their parents' rage, <br />Which, but their children's end, nought could ";
+    
+            /* Word 7 - VERB   */
+            // answer = prompt("VERB ","");
+            answer = getURLParameter("answer7");
+            retHTML = retHTML + "<b>" + answer +  "</b> <br /> Is now the ";
+    
+            /* Word 8 - NUMBER    */
+            //answer = prompt("NUMBER ","  ");
+            answer = getURLParameter("answer8");
+            retHTML = retHTML + "<b>" + answer +  "</b>  hours' traffic of our stage; <br /> The which if you with ";
+    
+            /* Word 9 - ADJECTIVE   */
+            //answer = prompt("ADJECTIVE ","");
+            answer = getURLParameter("answer9");
+            retHTML = retHTML + "<b>" + answer +  "</b>  ";
+    
+            /* Word 10 - BODY PART    */
+            //answer = prompt("BODY PART ","");
+            answer = getURLParameter("answer10");
+            retHTML = retHTML + "<b>" + answer +  "</b>  attend, <br /> What here shall  ";
+    
+            /* Word 11 - VERB   */
+            //answer = prompt("VERB ","");
+            answer = getURLParameter("answer11");
+            retHTML = retHTML + "<b>" + answer +  "</b> , our toil shall strive to mend. ";
+            
+            document.write(retHTML);
+        } else {
+            document.write('<p>NOT SUBMITTED!!</p>');
+        }
+
+    
+    </script>
+
+    </body>
+</html>
