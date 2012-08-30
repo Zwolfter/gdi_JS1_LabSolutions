@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+    
+    <h1>Mad Libs!</h1>
+    <script>
+        /*
+        
+             bury their parents` strife.
+            The fearful passage of their V6 love,
+            And the continuance of their parents` rage,
+            Which, but their children`s end, nought could V7,
+            Is now the V8 hours` traffic of our stage;
+            The which if you with V9 V10 attend,
+            What here shall V11, our toil shall strive to mend.
+        */
+        var answer;
+        var retHTML = '';
+        
+        /* Word 1 - Plural Noun */
+        answer = prompt("Noun (plural)","");
+        retHTML = "Two " + answer + " both alike in dignity, <br> In fair ";
+
+        /* Word 2 - PLACE */
+        answer = prompt("PLACE","");
+        retHTML = retHTML + answer +  ", where we lay our scene,<br />From ancient  ";
+
+        /* Word 3 - NOUN */
+        answer = prompt("NOUN"," ");
+        retHTML = retHTML + answer +  " break to new mutiny, <br /> Where civil blood makes civil hands unclean. <br /> From forth the fatal loins of these two foes <br /> A pair of star-cross'd ";
+
+        /* Word 4 - NOUN (PLURAL)     */
+        answer = prompt("NOUN (PLURAL)"," ");
+        retHTML = retHTML + answer +  " take their life; <br /> Whole misadventured piteous overthrows <br /> Do with their ";
+
+        /* Word 5 - NOUN   */
+        answer = prompt("NOUN ","");
+        retHTML = retHTML + answer +  " bury their parents` strife. <br /> The fearful passage of their ";
+
+        /* Word 6 -  ADJECTIVE  */
+        answer = prompt("ADJECTIVE "," ");
+        retHTML = retHTML + answer +  " love, <br /> And the continuance of their parents' rage, <br />Which, but their children's end, nought could ";
+
+        /* Word 7 - VERB   */
+        answer = prompt("VERB ","");
+        retHTML = retHTML + answer +  "<br /> Is now the ";
+
+        /* Word 8 - NUMBER    */
+        answer = prompt("NUMBER ","  ");
+        retHTML = retHTML + answer +  " hours' traffic of our stage; <br /> The which if you with ";
+
+        /* Word 9 - ADJECTIVE   */
+        answer = prompt("ADJECTIVE ","");
+        retHTML = retHTML + answer +  " ";
+
+        /* Word 10 - BODY PART    */
+        answer = prompt("BODY PART ","");
+        retHTML = retHTML + answer +  " attend, <br /> What here shall  ";
+
+        /* Word 11 - VERB   */
+        answer = prompt("VERB ","");
+        retHTML = retHTML + answer +  ", our toil shall strive to mend. ";
+        
+        document.write(retHTML);
+
+    
+    </script>
+
+    </body>
+</html>
