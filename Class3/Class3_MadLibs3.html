@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title>Madlibs! Class 3 - injection </title>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="code.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css" />
-        <script type="text/javascript" src="madlibs.js"></script>
     </head>
     <body>
     
     <h1>Mad Libs!</h1>
-    <form id="madlibs" name="input" action="Class2_MadLibs2.html" method="get">
+    <div class="inputs">
+        <form id="madlibs" name="input" action="Class3_MadLibs3.html" method="get">
         <label>Noun (plural) :     </label>     <input type="text" name="answer1" value="dudes"         />    <br />
         <label>Place :             </label>     <input type="text" name="answer2" value="dude's house"  />    <br />
         <label>Noun :              </label>     <input type="text" name="answer3" value="dude"          />    <br />
@@ -20,11 +22,16 @@
         <label>Adjective :         </label>     <input type="text" name="answer9" value="dudely"        />    <br />
         <label>Body Part :         </label>     <input type="text" name="answer10" value="dudeodenum"   />    <br />
         <label>Verb :              </label>     <input type="text" name="answer11" value="duded"        />    <br />
-        
-        <input type="hidden" name="submitted" value="1" />
-        <input type="submit" value="Submit" />
-    </form>
-
+            
+            <input type="hidden" name="submitted" value="1" />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+    <div id="output">
+    
+    </div>
+    
+    
     <script>
         MADLib();
     </script>

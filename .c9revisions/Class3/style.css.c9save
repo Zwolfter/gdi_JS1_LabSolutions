@@ -1,0 +1,1 @@
+{"ts":1346410891383,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1," form#madlibs label {\n    float:              left;\n    width:              10em;\n}\n\n.inputs {\n    float:              left;\n}\n\n.output {\n    float:              left;\n    width:              50%;\n}"]],"start1":0,"start2":0,"length1":0,"length2":198}]],"length":198}
