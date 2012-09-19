@@ -1,0 +1,16 @@
+ form#madlibs label {
+    float:              left;
+    width:              10em;
+}
+
+.inputs {
+    float:              left;
+}
+
+#output {
+    border:             solid 1px black;
+    float:              left;
+    margin:             0 0 0 1em;
+    padding:            1em;
+    
+}
